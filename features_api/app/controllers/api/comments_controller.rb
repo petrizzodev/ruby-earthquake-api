@@ -1,9 +1,10 @@
-class CommentsController < ApplicationController
+class Api::CommentsController < ApplicationController
   before_action :set_comment, only: %i[ show update destroy ]
 
   # GET /comments
   def index
-    @comments = Comment.all
+    feature_id = params[:feature_id]
+    @comments = Comment.where(feature_id: feature_id)
 
     render json: @comments
   end
@@ -11,6 +12,12 @@ class CommentsController < ApplicationController
   # GET /comments/1
   def show
     render json: @comment
+  end
+
+  # GET /features/:feature_id/comments
+  def index_by_feature
+    @comments = Comment.where(feature_id: params[:feature_id])
+    render json: @comments
   end
 
   # POST /comments

@@ -43,7 +43,7 @@ export default function Features() {
         <main style={{ width: '80vw', margin: 'auto' }}>
             <div className='card'>
                 <div className='card-body'>
-                <h5 className='card-title'>Valores posibles para filtrar:</h5>
+                <h5 className='card-title'>Tipos de magnitud:</h5>
                     <p className='card-text'><strong>md</strong></p>
                     <p className='card-text'><strong>ml</strong></p>
                     <p className='card-text'><strong>ms</strong></p>
@@ -57,7 +57,7 @@ export default function Features() {
             <Searcher setMagType={setMagType} />
             {data === null || data.length === 0 ? (
                 <div className="alert-warning" role="alert">
-                    No hay resultados, por favor verifica que estés usando los valores para filtrar
+                    No hay resultados, por favor verifica que estés usando un tipo de magnitud valido.
                 </div>
             ) : (
                 data.map((feature) => (

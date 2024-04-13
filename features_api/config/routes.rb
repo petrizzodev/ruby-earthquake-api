@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     resources :features do
       post 'comments', to: 'features#create_comment'
+      resources :comments, only: [:index], controller: :comments
     end
   end
   

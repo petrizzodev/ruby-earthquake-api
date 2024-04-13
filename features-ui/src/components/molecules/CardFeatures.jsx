@@ -1,4 +1,5 @@
 import '../../index.css';
+import Comments from '../organisms/Comments';
 
 const magTypeColors = {
     md: '#00FF00',
@@ -43,6 +44,7 @@ export default function CardFeatures({ data }) {
                 <p className='card-text'><strong>Coordenadas - Longitud:</strong> {longitude}</p>
                 <p className='card-text'><strong>Coordenadas - Latitud:</strong> {latitude}</p>
                 <p className='card-text'><a href={external_url}>URL Externa</a></p>
+                <Comments id={data.id} />
             </div>
         </div>
     )
