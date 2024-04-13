@@ -60,6 +60,7 @@ Puedes crear un comentario sobre una Feature sismológica utilizando la siguient
 
 ```json
 {"body": "This is a comment"}
+```
 
 # Client Side Aplicación React
 
@@ -75,6 +76,10 @@ Paginación: Navegación entre múltiples páginas de datos.
 ## Ejecuta la aplicación:
 Node.js y npm.
 Ejecutar el servidor de Ruby on Rails para poder consultar las API de Features.
+
+##Instala las dependencias:
+
+### `npm install`
 
 ## Ejecuta la aplicación:
 
