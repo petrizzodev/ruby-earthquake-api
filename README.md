@@ -60,3 +60,22 @@ Puedes crear un comentario sobre una Feature sismológica utilizando la siguient
 
 ```json
 {"body": "This is a comment"}
+
+# Client Side Aplicación React
+
+Esta aplicación permite a los usuarios buscar, visualizar y comentar Features relacionadas con datos de terremotos.
+
+## Características
+
+Búsqueda: Los usuarios pueden buscar características por tipo de magnitud (ml, md, etc.) utilizando un buscador.
+Visualización de Datos: Los datos de las características se muestran en tarjetas, que incluyen información detallada como ID, título, magnitud, lugar, hora y más.
+Comentarios: Los usuarios pueden ver y agregar comentarios asociados con una característica específica.
+Paginación: Navegación entre múltiples páginas de datos.
+
+## Ejecuta la aplicación:
+Node.js y npm.
+Ejecutar el servidor de Ruby on Rails para poder consultar las API de Features.
+
+## Ejecuta la aplicación:
+
+### `npm start`
