@@ -1,5 +1,5 @@
 # README  
-
+ 
 # Datos Sismológicos
 
 Este proyecto es una aplicación desarrollada en Ruby on Rails que obtiene datos sismológicos desde un feed en línea y los persiste en una base de datos SQLite. Además, ofrece API para consultar y crear comentarios sobre las características sismológicas.
